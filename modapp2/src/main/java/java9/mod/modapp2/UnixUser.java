@@ -1,12 +1,8 @@
 package java9.mod.modapp2;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+
+
 public class UnixUser {
 	private String userId;
 	private String employeeId;
@@ -18,6 +14,45 @@ public class UnixUser {
 		this.userName = userName;
 		this.userType = userType;
 	}
+	
+	public UnixUser() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+   
+	public String getUserId() {
+		return userId;
+	}
+
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+
+	public String getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getUserType() {
+		return userType;
+	}
+
+	public void setUserType(String userType) {
+		this.userType = userType;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		UnixUser other=(UnixUser) obj;
